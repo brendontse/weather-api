@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('#location').val("");
 
     let request = new XMLHttpRequest();
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=4d503fd893c48b741f882ccca4231972`;
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=[API-KEY-GOES-HERE]`;
 
     request.onreadystatechange = function() {
       if (this.readyState === 4 && this.status === 200) {
